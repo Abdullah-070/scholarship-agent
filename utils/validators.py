@@ -2,7 +2,7 @@
 
 from typing import Dict, List, Optional
 from datetime import datetime
-import validators as val
+import re
 
 class InputValidator:
     """Validates user inputs"""
@@ -35,7 +35,16 @@ class ScholarshipValidator:
     @staticmethod
     def validate_url(url: str) -> bool:
         """Validate URL format"""
-        return val.url(url) if url else False
+        if not url:
+            return False
+        url_pattern = re.compile(
+            r'^https?://'  # http:// or https://
+            r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+[A-Z]{2,6}\.?|'  # domain
+            r'localhost|'  # localhost
+            r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})'  # or IP
+            r'(?::\d+)?'  # optional port
+            r'(?:/?|[/?]\S+)$', re.IGNORECASE)
+        return bool(url_pattern.match(url))
     
     @staticmethod
     def validate_date(date_str: str) -> Optional[datetime]:
