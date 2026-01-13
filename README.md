@@ -67,6 +67,14 @@ streamlit run app.py
 - Youth Opportunities
 - ScholarshipPortal
 
-## 📄 License
+## � Credits
+
+**Developed by:**
+- Abdullah-070
+- Muneeb Tahir 
+
+This project is a collaborative effort combining web scraping, intelligent matching algorithms, and user-friendly interface design.
+
+## �📄 License
 
 MIT License
