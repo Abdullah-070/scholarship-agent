@@ -36,8 +36,8 @@ Visit: **[AI Scholarship Finder on Streamlit Cloud](https://scholarhip-agent.str
 
 ```bash
 # Clone repository
-git clone https://github.com/Abdullah-070/AI_Scholarhip_Agent.git
-cd AI_Scholarhip_Agent
+git clone https://github.com/Abdullah-070/scholarship-agent.git
+cd scholarship-agent
 
 # Install dependencies
 pip install -r requirements.txt
@@ -70,7 +70,7 @@ streamlit run app.py
 ## � Credits
 
 **Developed by:**
-- Abdullah-070
+- Muhammad Abdullah
 - Muneeb Tahir 
 
 This project is a collaborative effort combining web scraping, intelligent matching algorithms, and user-friendly interface design.
