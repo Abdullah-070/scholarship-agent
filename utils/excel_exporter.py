@@ -23,9 +23,13 @@ class ExcelExporter:
         Returns:
             Path to generated Excel file
         """
-        if filename is None:
+        # Ensure we always have a valid filename
+        if not filename or not filename.strip():
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            filename = f"scholarships_{timestamp}.xlsx"
+            filename = f"scholarships_{timestamp}"
+        
+        # Strip any path components and whitespace
+        filename = os.path.basename(filename.strip())
         
         # Ensure filename has .xlsx extension
         if not filename.endswith('.xlsx'):
@@ -54,8 +58,8 @@ class ExcelExporter:
         # Create DataFrame
         df = pd.DataFrame(data)
         
-        # Write to Excel
-        df.to_excel(filepath, index=False, sheet_name='Scholarships')
+        # Write to Excel (explicitly set engine to avoid 'No engine for filetype' error)
+        df.to_excel(filepath, index=False, sheet_name='Scholarships', engine='openpyxl')
         
         # Apply formatting
         ExcelExporter._apply_formatting(filepath)

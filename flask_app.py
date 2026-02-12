@@ -51,6 +51,9 @@ validator = InputValidator()
 excel_exporter = ExcelExporter()
 db_manager = DatabaseManager()
 
+# Initialize database tables (runs on import for WSGI compatibility)
+db_manager.init_db()
+
 # Setup logging
 logging.basicConfig(
     level=logging.INFO,
