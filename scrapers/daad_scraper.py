@@ -108,7 +108,7 @@ class DAADScraper(BaseScraper):
                 "funding": "€1,200/month + health insurance + travel allowance",
                 "eligibility": "International students with excellent academic record",
                 "documents": "CV, motivation letter, academic transcripts, language certificate (German B1 or English B2)",
-                "deadline": "Varies by institution (typically March-May)",
+                "deadline": "March-May 2026 (varies by institution)",
                 "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/"
             },
             {
@@ -120,7 +120,7 @@ class DAADScraper(BaseScraper):
                 "funding": "€934/month + tuition fees + health insurance + travel costs",
                 "eligibility": "Developing country nationals with 2+ years work experience",
                 "documents": "University admission, CV, reference letters, work certificates",
-                "deadline": "Varies (typically August-October)",
+                "deadline": "August-October 2025 (annually)",
                 "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/"
             },
             {
@@ -132,11 +132,11 @@ class DAADScraper(BaseScraper):
                 "funding": "€934/month + health insurance + travel allowance",
                 "eligibility": "International graduates with Bachelor's degree",
                 "documents": "Admission letter, CV, motivation letter, transcripts, language certificate",
-                "deadline": "October 31 (annually)",
+                "deadline": "October 2025 (annually)",
                 "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/"
             },
             {
-                "title": "DAAD Research Grants for Doctoral Candidates and Young Academics",
+                "title": "DAAD Research Grants for Doctoral Candidates",
                 "country": "Germany",
                 "degree": "PhD/Postdoctoral",
                 "field": "All fields",
@@ -145,18 +145,6 @@ class DAADScraper(BaseScraper):
                 "eligibility": "Doctoral candidates and postdocs from all countries",
                 "documents": "Research proposal, CV, publications list, recommendation letters",
                 "deadline": "Multiple deadlines throughout the year",
-                "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/"
-            },
-            {
-                "title": "DAAD STIBET Scholarships (Studienabschlussbeihilfe)",
-                "country": "Germany",
-                "degree": "Bachelor's/Master's",
-                "field": "All fields",
-                "duration": "6 months",
-                "funding": "€650/month",
-                "eligibility": "International students already in Germany near graduation",
-                "documents": "Proof of enrollment, transcript, financial need documentation",
-                "deadline": "Contact university directly",
                 "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/"
             }
         ]

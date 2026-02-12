@@ -137,43 +137,43 @@ class OnlineScholarshipsScraper(BaseScraper):
                 'country': 'Germany',
                 'degree': "Master's",
                 'field': 'All fields',
-                'funding': 'Full scholarship',
-                'deadline': '2024-12-31',
-                'url': 'https://www.daad.de/en/',
-                'eligibility': 'Bachelor degree required, English/German language',
-                'documents': 'Academic records, language certificate, motivation letter'
+                'funding': 'Full scholarship: €934-1,200/month + health insurance + travel',
+                'deadline': 'October 2025 (annually)',
+                'url': 'https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/',
+                'eligibility': "Bachelor's degree required, English/German language proficiency",
+                'documents': 'Academic records, language certificate, motivation letter, CV'
             },
             {
                 'title': 'Fulbright Foreign Student Program - USA',
                 'country': 'United States',
-                'degree': "Master's",
+                'degree': "Master's/PhD",
                 'field': 'All fields',
-                'funding': 'Full scholarship',
-                'deadline': '2024-10-31',
+                'funding': 'Full scholarship: tuition + living stipend + health insurance + airfare',
+                'deadline': 'October 2025 (annually)',
                 'url': 'https://foreign.fulbrightonline.org/',
-                'eligibility': 'Bachelor degree, TOEFL/IELTS, work experience preferred',
-                'documents': 'Academic transcripts, English language test, CV'
+                'eligibility': "Bachelor's degree, TOEFL/IELTS, work experience preferred",
+                'documents': 'Academic transcripts, English language test scores, CV, study plan'
             },
             {
                 'title': 'Chevening Scholarships - UK',
                 'country': 'United Kingdom',
                 'degree': "Master's",
                 'field': 'All fields',
-                'funding': 'Full scholarship',
-                'deadline': '2024-11-07',
+                'funding': 'Full scholarship: tuition + monthly stipend + travel costs',
+                'deadline': 'November 2025 (annually)',
                 'url': 'https://www.chevening.org/',
-                'eligibility': 'Bachelor degree, 2+ years work experience',
-                'documents': 'Academic records, employment records, references'
+                'eligibility': "Bachelor's degree, 2+ years work experience, return to home country",
+                'documents': 'Academic records, employment records, references, essays'
             },
             {
-                'title': 'Erasmus Mundus Scholarships - Europe',
-                'country': 'Multiple - Europe',
+                'title': 'Erasmus Mundus Joint Masters - Europe',
+                'country': 'Europe (multiple countries)',
                 'degree': "Master's",
                 'field': 'All fields',
-                'funding': 'Partial/Full',
-                'deadline': '2024-12-15',
-                'url': 'https://www.erasmusmundus.eu/',
-                'eligibility': 'Bachelor degree, language proficiency',
-                'documents': 'Transcripts, language certificate, motivation letter'
+                'funding': 'Full scholarship: tuition + €1,400/month + travel + insurance',
+                'deadline': 'January 2026 (varies by programme)',
+                'url': 'https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en',
+                'eligibility': "Bachelor's degree, language proficiency (English/programme language)",
+                'documents': 'Transcripts, language certificate, motivation letter, CV, references'
             }
         ]

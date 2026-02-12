@@ -11,32 +11,67 @@ except ImportError:
 class FulbrightScraper(BaseScraper):
     """Scraper for Fulbright Foreign Student Program"""
     
+    SKIP_DOMAINS = [
+        'facebook.com', 'instagram.com', 'twitter.com', 'x.com',
+        'linkedin.com', 'youtube.com', 'tiktok.com', '#', 'javascript:', 'mailto:'
+    ]
+    
     def scrape(self, profile: Dict) -> List[Dict]:
         scholarships = []
 
         try:
             response = self.session.get(self.url, timeout=40)
             soup = BeautifulSoup(response.content, "lxml")
+            seen_titles = set()
 
             links = soup.find_all("a", href=True)
 
             for link in links:
-                text = link.get_text(strip=True).lower()
-                if "fulbright" in text or "scholar" in text:
-                    scholarships.append({
-                        "title": link.get_text(strip=True),
-                        "country": "United States",
-                        "degree": "Master's/PhD",
-                        "field": "All fields",
-                        "duration": "1-5 years",
-                        "funding": "Full funding + stipend + health insurance",
-                        "eligibility": "International applicants",
-                        "documents": "GRE/TOEFL, transcripts, essays",
-                        "deadline": "Varies by country",
-                        "url": link["href"] if link["href"].startswith("http") else self.url
-                    })
+                text = link.get_text(strip=True)
+                href = link.get('href', '')
+                text_lower = text.lower()
+                
+                # Skip social media & noise
+                if any(skip in href.lower() for skip in self.SKIP_DOMAINS):
+                    continue
+                if len(text) < 15 or len(text) > 200:
+                    continue
+                
+                if "fulbright" in text_lower or ("scholar" in text_lower and len(text) > 20):
+                    normalized = text_lower.strip()
+                    if normalized not in seen_titles:
+                        seen_titles.add(normalized)
+                        scholarships.append({
+                            "title": text,
+                            "country": "United States",
+                            "degree": "Master's/PhD",
+                            "field": "All fields",
+                            "duration": "1-5 years",
+                            "funding": "Full funding: tuition + monthly stipend + health insurance + airfare",
+                            "eligibility": "International applicants with Bachelor's degree",
+                            "documents": "GRE/TOEFL, transcripts, essays, references",
+                            "deadline": "October 2025 (varies by country)",
+                            "url": href if href.startswith("http") else self.url
+                        })
 
         except Exception as e:
             print(f"Fulbright scraper error: {e}")
 
+        if not scholarships:
+            return self._get_fallback()
         return scholarships
+    
+    def _get_fallback(self) -> List[Dict]:
+        """Return guaranteed Fulbright entry"""
+        return [{
+            "title": "Fulbright Foreign Student Program",
+            "country": "United States",
+            "degree": "Master's/PhD",
+            "field": "All fields",
+            "duration": "1-2 years (Master's), 3-5 years (PhD)",
+            "funding": "Full scholarship: tuition + monthly stipend + health insurance + roundtrip airfare",
+            "eligibility": "International students with Bachelor's degree, strong academic record, leadership potential",
+            "documents": "GRE scores, TOEFL/IELTS, academic transcripts, 3 essays, 3 references, CV",
+            "deadline": "October 2025 (varies by country)",
+            "url": "https://foreign.fulbrightonline.org/"
+        }]

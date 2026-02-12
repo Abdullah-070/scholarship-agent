@@ -5,6 +5,8 @@ from openpyxl import load_workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from typing import List, Dict
 from datetime import datetime
+import tempfile
+import os
 
 class ExcelExporter:
     """Export scholarship results to Excel with formatting"""
@@ -24,6 +26,13 @@ class ExcelExporter:
         if filename is None:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             filename = f"scholarships_{timestamp}.xlsx"
+        
+        # Ensure filename has .xlsx extension
+        if not filename.endswith('.xlsx'):
+            filename = filename + '.xlsx'
+        
+        # Use temp directory for file creation (works on PythonAnywhere)
+        filepath = os.path.join(tempfile.gettempdir(), filename)
         
         # Prepare data for DataFrame
         data = []
@@ -46,12 +55,12 @@ class ExcelExporter:
         df = pd.DataFrame(data)
         
         # Write to Excel
-        df.to_excel(filename, index=False, sheet_name='Scholarships')
+        df.to_excel(filepath, index=False, sheet_name='Scholarships')
         
         # Apply formatting
-        ExcelExporter._apply_formatting(filename)
+        ExcelExporter._apply_formatting(filepath)
         
-        return filename
+        return filepath
     
     @staticmethod
     def _apply_formatting(filename: str):

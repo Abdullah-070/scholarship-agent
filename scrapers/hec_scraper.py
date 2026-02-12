@@ -210,7 +210,7 @@ class HECScraper(BaseScraper):
                 'funding': 'Full funding: tuition fees + monthly stipend + travel + thesis allowance',
                 'eligibility': 'Pakistani nationals under 35, first division in BS/MS, not employed in government permanent position',
                 'documents': 'Admission letter from HEC-recognized university, Academic transcripts, IELTS 6.5+, GRE (if required), Research proposal, NOC (if employed)',
-                'deadline': 'Usually announced twice a year (March and September)',
+                'deadline': 'March and September 2026 (biannual)',
                 'url': 'https://hec.gov.pk/english/scholarshipsgrants/OSHD/Pages/default.aspx'
             },
             {
@@ -234,7 +234,7 @@ class HECScraper(BaseScraper):
                 'funding': 'Research grant + monthly stipend + equipment funding',
                 'eligibility': 'PhD students working on approved NRPU research projects',
                 'documents': 'NRPU project approval, PhD enrollment proof, supervisor recommendation',
-                'deadline': 'Based on NRPU project cycle',
+                'deadline': 'Based on NRPU project cycle (check HEC for 2025-2026)',
                 'url': 'https://hec.gov.pk/english/services/universities/ReseachSupport/Pages/NRPU.aspx'
             },
             {
@@ -246,7 +246,7 @@ class HECScraper(BaseScraper):
                 'funding': 'Full scholarship: tuition + airfare + monthly stipend (£1,347) + arrival allowance',
                 'eligibility': 'Pakistani nationals with strong academic record, commitment to development',
                 'documents': 'Admission letter, Transcripts, IELTS 6.5+, Development impact statement, References',
-                'deadline': 'December (annually)',
+                'deadline': 'December 2025 (annually)',
                 'url': 'https://hec.gov.pk/english/scholarshipsgrants/Pages/default.aspx'
             },
             {
@@ -258,7 +258,7 @@ class HECScraper(BaseScraper):
                 'funding': 'Full scholarship: tuition waiver + monthly stipend (CNY 2,500-3,500) + accommodation + health insurance',
                 'eligibility': 'Pakistani nationals under 35 (PhD), 30 (Master\'s), 25 (Bachelor\'s)',
                 'documents': 'Admission letter from Chinese university, Academic transcripts, Health certificate, Study plan',
-                'deadline': 'Usually January-March (annually)',
+                'deadline': 'January-March 2026 (annually)',
                 'url': 'https://hec.gov.pk/english/scholarshipsgrants/Pages/default.aspx'
             },
             {
@@ -270,7 +270,7 @@ class HECScraper(BaseScraper):
                 'funding': 'Tuition fees + monthly stipend + books allowance',
                 'eligibility': 'Pakistani students from underserved areas with financial need and strong academics',
                 'documents': 'University admission, Transcripts, Income certificate, Domicile',
-                'deadline': 'Check HEC announcements (usually after university admissions)',
+                'deadline': 'After university admissions 2025 (check HEC)',
                 'url': 'https://hec.gov.pk/english/scholarshipsgrants/Pages/default.aspx'
             },
             {
@@ -282,7 +282,7 @@ class HECScraper(BaseScraper):
                 'funding': 'Monthly stipend (TRY 3,000-5,500) + tuition waiver + accommodation + health insurance + Turkish language course',
                 'eligibility': 'Pakistani nationals with good academic record, under age limits',
                 'documents': 'Academic transcripts, Personal statement, Reference letters, Language certificate',
-                'deadline': 'Usually February (annually)',
+                'deadline': 'February 2026 (annually)',
                 'url': 'https://hec.gov.pk/english/scholarshipsgrants/Pages/default.aspx'
             },
             {
@@ -294,7 +294,7 @@ class HECScraper(BaseScraper):
                 'funding': 'Monthly allowance (JPY 144,000-145,000) + tuition waiver + airfare',
                 'eligibility': 'Pakistani nationals under 35 with strong academics',
                 'documents': 'Research proposal, Academic transcripts, Recommendation letters, Language certificate',
-                'deadline': 'June-July (annually)',
+                'deadline': 'June-July 2026 (annually)',
                 'url': 'https://hec.gov.pk/english/scholarshipsgrants/Pages/default.aspx'
             },
             {
@@ -306,11 +306,11 @@ class HECScraper(BaseScraper):
                 'funding': 'Monthly allowance (€860-1,181) + tuition exemption + social security',
                 'eligibility': 'Pakistani nationals with Bachelor\'s/Master\'s degree',
                 'documents': 'Admission letter, Transcripts, Language certificate (French B2 or English), CV',
-                'deadline': 'Varies (usually January-March)',
+                'deadline': 'January-March 2026 (varies)',
                 'url': 'https://hec.gov.pk/english/scholarshipsgrants/Pages/default.aspx'
             },
             {
-                'title': 'HEC HEC-DAAD Scholarships for Germany',
+                'title': 'HEC-DAAD Scholarships for Germany',
                 'country': 'Germany',
                 'degree': 'Master\'s/PhD',
                 'field': 'Engineering, Natural Sciences, Social Sciences',
@@ -318,7 +318,7 @@ class HECScraper(BaseScraper):
                 'funding': 'Monthly stipend (€934-1,200) + health insurance + travel allowance',
                 'eligibility': 'Pakistani nationals with excellent academic record',
                 'documents': 'Admission letter, Transcripts, Language certificate (German B1 or English B2), Research proposal',
-                'deadline': 'Check HEC announcements (usually October-November)',
+                'deadline': 'October-November 2025 (annually)',
                 'url': 'https://hec.gov.pk/english/scholarshipsgrants/Pages/default.aspx'
             }
         ]

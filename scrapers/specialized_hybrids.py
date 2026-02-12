@@ -127,9 +127,9 @@ class DAADHybrid(HybridScraper):
                 'field': 'All fields',
                 'duration': 'Up to 3 years',
                 'funding': '€1,200/month + health insurance',
-                'eligibility': 'International students',
+                'eligibility': 'International students with excellent academic record',
                 'documents': 'CV, transcripts, language certificate',
-                'deadline': 'Varies by institution',
+                'deadline': 'March-May 2026 (varies by institution)',
                 'url': 'https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/'
             },
             {
@@ -139,13 +139,13 @@ class DAADHybrid(HybridScraper):
                 'field': 'Engineering, Agriculture, Economics',
                 'duration': '12-42 months',
                 'funding': '€934/month + tuition',
-                'eligibility': 'Developing country nationals',
+                'eligibility': 'Developing country nationals with 2+ years work experience',
                 'documents': 'Admission letter, CV, references',
-                'deadline': 'August-October',
+                'deadline': 'August-October 2025 (annually)',
                 'url': 'https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/'
             },
             {
-                'title': 'DAAD Study Scholarships',
+                'title': 'DAAD Study Scholarships for Graduates',
                 'country': 'Germany',
                 'degree': 'Master\'s',
                 'field': 'All fields',
@@ -153,7 +153,7 @@ class DAADHybrid(HybridScraper):
                 'funding': '€934/month + insurance',
                 'eligibility': 'International graduates',
                 'documents': 'Admission, CV, transcripts',
-                'deadline': 'October 31',
+                'deadline': 'October 2025 (annually)',
                 'url': 'https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/'
             }
         ]
@@ -174,7 +174,7 @@ class HECHybrid(HybridScraper):
                 'funding': 'Full funding',
                 'eligibility': 'Pakistani nationals under 35',
                 'documents': 'Admission letter, IELTS 6.5+',
-                'deadline': 'March and September',
+                'deadline': 'March and September 2026 (biannual)',
                 'url': 'https://hec.gov.pk/english/scholarshipsgrants/OSHD/Pages/default.aspx'
             },
             {
@@ -195,34 +195,34 @@ class HECHybrid(HybridScraper):
                 'degree': 'Master\'s/PhD',
                 'field': 'All fields',
                 'duration': '1-3 years',
-                'funding': 'Full scholarship',
-                'eligibility': 'Pakistani nationals',
+                'funding': 'Full scholarship: tuition + £1,347/month + airfare',
+                'eligibility': 'Pakistani nationals with strong academic record',
                 'documents': 'Admission, IELTS, references',
-                'deadline': 'December',
+                'deadline': 'December 2025 (annually)',
                 'url': 'https://hec.gov.pk/english/scholarshipsgrants/Pages/default.aspx'
             },
             {
-                'title': 'HEC Chinese Government Scholarship',
+                'title': 'HEC Chinese Government Scholarship (CSC)',
                 'country': 'China',
                 'degree': 'All levels',
                 'field': 'All fields',
                 'duration': 'Varies',
-                'funding': 'Full scholarship',
+                'funding': 'Full scholarship: tuition + CNY 2,500-3,500/month + accommodation',
                 'eligibility': 'Pakistani nationals',
                 'documents': 'Admission, health certificate',
-                'deadline': 'January-March',
+                'deadline': 'January-March 2026 (annually)',
                 'url': 'https://hec.gov.pk/english/scholarshipsgrants/Pages/default.aspx'
             },
             {
-                'title': 'HEC Turkey Scholarships',
+                'title': 'HEC Turkey Scholarships (Türkiye Bursları)',
                 'country': 'Turkey',
                 'degree': 'All levels',
                 'field': 'All fields',
                 'duration': 'Varies',
-                'funding': 'Monthly stipend + accommodation',
+                'funding': 'Monthly stipend TRY 3,000-5,500 + accommodation + tuition',
                 'eligibility': 'Pakistani nationals',
                 'documents': 'Transcripts, references',
-                'deadline': 'February',
+                'deadline': 'February 2026 (annually)',
                 'url': 'https://hec.gov.pk/english/scholarshipsgrants/Pages/default.aspx'
             }
         ]
